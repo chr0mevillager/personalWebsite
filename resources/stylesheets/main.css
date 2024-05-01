@@ -205,26 +205,21 @@ header {
 	padding: 0;
 	height: 6em;
 	background-color: black;
-	position: fixed;
+	position: sticky;
 
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
-}
-header #left-components {
-	display: flex;
-	justify-content: flex-start;
 	align-items: center;
-	padding-left: 2em;
+}
+header a #initials {
+	margin-left: 2em;
+	height: 2em;
 }
 header #right-components {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-}
-
-header #left-components #initials {
-	height: 2em;
 }
 
 header #right-components ul.link-dropdown-list {

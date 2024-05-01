@@ -17,7 +17,7 @@
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
-	height: 97.5vh;
+	height: calc(96vh - 6em);
 	width: 100vw;
 }
 
