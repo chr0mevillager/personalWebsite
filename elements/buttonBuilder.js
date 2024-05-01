@@ -10,10 +10,10 @@ for (var i = 0; i < buttonLinks.length; i++) {
 	buttonLinks[i].appendChild(buttonChildText);
 
 	//Add animation triggers
-	buttonLinks[i].addEventListener("mouseover", function() {
+	buttonLinks[i].addEventListener("mouseover", function () {
 		this.classList.add('hovered');
 	}, false);
-	buttonLinks[i].addEventListener("mouseleave", function() {
+	buttonLinks[i].addEventListener("mouseleave", function () {
 		this.classList.remove('hovered');
 	}, false);
 
@@ -34,10 +34,10 @@ for (var i = 0; i < dropdownButtonLinks.length; i++) {
 	dropdownButtonLinks[i].prepend(dropdownButtonChildText);
 
 	//Add animation triggers
-	dropdownButtonLinks[i].addEventListener("mouseover", function() {
+	dropdownButtonLinks[i].addEventListener("mouseover", function () {
 		this.classList.add('hovered');
 	}, false);
-	dropdownButtonLinks[i].addEventListener("mouseleave", function() {
+	dropdownButtonLinks[i].addEventListener("mouseleave", function () {
 		this.classList.remove('hovered');
 	}, false);
 	// if (dropdownButtonLinks[i].classList.contains("hover")) {
