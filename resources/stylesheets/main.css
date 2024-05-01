@@ -165,7 +165,7 @@ ul.link-dropdown-list li {
     -webkit-text-fill-color: transparent;
 
 	background-position-x: 100%;
-	transition: background-position-x 0.25s ease, padding-top 0.25s ease, padding-bottom 0.25s ease;
+	transition: background-position-x 0.25s ease, padding-top 0.25s ease, padding-bottom 0.25s ease, visibility 0.25s, opacity 0.25s ease;
 }
 
 ul.link-dropdown-list li:hover {
@@ -179,7 +179,8 @@ ul.link-dropdown-list.hide {
 }
 
 ul.link-dropdown-list.hide li {
-	display: none;
+	visibility: hidden;
+	opacity: 0;
 }
 
 /*These attributes affect button links *and* button link dropdowns*/
