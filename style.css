@@ -20,10 +20,9 @@ body {
 }
 
 #main-logo {
-	width: 32.5vw;
+	width: 34vw;
 }
 #main-flex {
-	transition: all 0.5s ease;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
@@ -36,6 +35,20 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-evenly;
+}
+
+p {
+	font-size: 1.5em;
+	color: black;
+	font-family: neue-haas-grotesk-display, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	width: 20em;
+}
+
+#welcome-text {
+	width: 17vw;
+	font-size: 1.75em;
 }
 
 footer {
@@ -207,6 +220,9 @@ button.open-link-dropdown .wiper, button.hovered .wiper {
 }
 
 /* ---------- Inverted Colors ---------- */
+p.invert {
+	color: white;
+}
 button.link.invert {
 	background-color: white;
 	color: black;
@@ -279,11 +295,18 @@ footer.invert {
 	#main-flex {
 		height: 100vh;
 	}
+
+	#welcome-text {
+		width: 50vw;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
 	body {
 		background-color: black;
+	}
+	p {
+		color: white;
 	}
 
 	button.link {
@@ -336,6 +359,9 @@ footer.invert {
 	}
 	
 	footer.invert {
+		color: black;
+	}
+	p.invert {
 		color: black;
 	}
 }
