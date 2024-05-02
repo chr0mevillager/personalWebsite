@@ -1,0 +1,17 @@
+#main-flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	height: calc(96vh - 6em);
+	width: 100vw;
+	padding-top: 6em;
+}
+
+@media screen and (orientation: portrait) {
+	#main-flex {
+		flex-direction: column;
+		height: calc(96vh - 10em);
+		padding-top: 10em;
+	}
+}
