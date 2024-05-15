@@ -46,6 +46,7 @@ article {
 	width: 100%;
 	color: black;
 	padding-top: 6em;
+	padding-bottom: 33vh;
 	margin: 0;
 	align-items: center;
 	display: flex;
@@ -108,6 +109,21 @@ article #article-content {
 	font-size: 1em;
 	width: 36em;
 	white-space-collapse: preserve;
+}
+
+article #article-content em {
+	font-weight: 600;
+	font-style: normal;
+}
+article #article-content i {
+	font-style: italic;
+}
+article #article-content a {
+	color: var(--primary-color);
+	text-decoration: none;
+}
+article #article-content a:visited {
+	color: var(--secondary-color);
 }
 
 /* ---------- Button Links ---------- */

@@ -6,7 +6,7 @@ articleContents.textContent = (Math.max(1, Math.round(readTime)) + "min Read Tim
 
 // ---------- Add "back to top" button ----------
 article = document.getElementsByTagName("article")[0];
-if (article.offsetHeight > window.innerHeight) {
+if (article.offsetHeight > 2 * window.innerHeight) {
 	var backToTopButton = document.createElement("button");
 	backToTopButton.classList.add("link");
 	backToTopButton.textContent = "back to top";
