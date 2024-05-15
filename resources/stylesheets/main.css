@@ -80,18 +80,18 @@ article #article-info #article-description {
 	font-family: neue-haas-grotesk-display, sans-serif;
 	font-weight: 500;
 	font-style: italic;
-	max-width: 30em;
-	font-size: 1em;
+	max-width: 17.5em;
+	font-size: 1.5em;
 	margin: 0;
 	line-height: 1.4em;
 }
 
 article #article-info #article-quick-info {
-	width: 15em;
+	width: 10em;
 	font-family: neue-haas-grotesk-display, sans-serif;
 	font-weight: 500;
 	font-style: italic;
-	font-size: 1em;
+	font-size: 1.5em;
 	text-align: right;
 	gap: 0.1em;
 	display: flex;
@@ -106,8 +106,8 @@ article #article-info #article-quick-info p, article #article-info #article-quic
 article #article-content {
 	font-family: neue-haas-grotesk-display, sans-serif;
 	font-weight: 500;
-	font-size: 1em;
-	width: 36em;
+	font-size: 1.5em;
+	width: 24em;
 	white-space-collapse: preserve;
 }
 
@@ -122,8 +122,31 @@ article #article-content a {
 	color: var(--primary-color);
 	text-decoration: none;
 }
+article #article-content a:hover {
+	text-decoration: underline;
+}
 article #article-content a:visited {
 	color: var(--secondary-color);
+}
+article #article-content h2 {
+	font-family: neue-haas-grotesk-display, sans-serif;
+	font-style: italic;
+	font-size: 2em;
+	font-weight: 900;
+	max-width: 9em;
+	padding: 0;
+	margin: 1.5em;
+	margin-left: 0;
+}
+article #article-content h3 {
+	font-family: neue-haas-grotesk-display, sans-serif;
+	font-style: italic;
+	font-size: 1.5em;
+	font-weight: 900;
+	max-width: 9em;
+	padding: 0;
+	margin: 1.5em;
+	margin-left: 0;
 }
 
 /* ---------- Button Links ---------- */
