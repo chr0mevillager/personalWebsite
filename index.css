@@ -19,7 +19,7 @@
 	align-items: center;
 	height: calc(96vh - 6em);
 	width: 100vw;
-	padding-top: 6em;
+	padding: 0;
 }
 
 @media screen and (orientation: portrait) {
