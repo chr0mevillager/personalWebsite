@@ -13,7 +13,7 @@ if (article.offsetHeight > 2 * window.innerHeight) {
 
 	var backToTopElement = document.createElement("a");
 	backToTopElement.appendChild(backToTopButton);
-	backToTopElement.setAttribute('href', "#header-padding");
+	backToTopElement.setAttribute('href', "#top");
 
 	article.appendChild(backToTopElement);
 }
