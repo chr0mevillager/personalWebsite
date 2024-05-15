@@ -2,7 +2,7 @@
 let readTime = document.getElementById("article-content").innerHTML.trim().split(" ").length / 225; //the actual reading average is closer to 250 according to google, but we want to give an underestimate
 let articleContents = document.getElementById("read-time");
 
-articleContents.textContent = (Math.max(1, Math.round(readTime)) + "min Read Time");
+articleContents.textContent = (Math.max(1, Math.round(readTime)) + "min read time");
 
 // ---------- Add "back to top" button ----------
 article = document.getElementsByTagName("article")[0];
