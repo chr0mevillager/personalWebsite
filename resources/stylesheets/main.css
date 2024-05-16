@@ -76,6 +76,21 @@ article #article-info {
 	margin-bottom: 2em;
 }
 
+article #article-actions {
+	display: flex;
+	width: 45em;
+	justify-content: space-around;
+	flex-direction: row;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 2em;
+	align-items: start;
+}
+
+#table-of-contents-wrapper {
+	display: inline-block;
+}
+
 article #article-info #article-description {
 	font-family: neue-haas-grotesk-display, sans-serif;
 	font-weight: 500;
@@ -350,6 +365,11 @@ ul.link-dropdown-list.hide {
 ul.link-dropdown-list.hide li {
 	visibility: hidden;
 	opacity: 0;
+}
+
+#table-of-contents-wrapper ul {
+	margin-left: 1em;
+	margin-top: -1em;
 }
 
 /*These attributes affect button links *and* button link dropdowns*/

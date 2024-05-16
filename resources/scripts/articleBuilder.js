@@ -39,3 +39,12 @@ for (var j = 0; j < headerList.length; j++) {
 		headerList[j].appendChild(li);
 	}
 }
+
+async function shareArticle() {
+	try {
+		await navigator.share({
+			title: "" + document.getElementsByTagName("h1")[0].textContent,
+  			url: window.location.href,
+		});
+	} catch (error) {}
+}
