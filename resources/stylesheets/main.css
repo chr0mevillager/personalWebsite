@@ -73,7 +73,6 @@ article #article-info {
 	flex-direction: row;
 	padding: 0;
 	margin: 0;
-	margin-bottom: 2em;
 }
 
 article #article-actions {
@@ -83,12 +82,8 @@ article #article-actions {
 	flex-direction: row;
 	padding: 0;
 	margin: 0;
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 	align-items: start;
-}
-
-#table-of-contents-wrapper {
-	display: inline-block;
 }
 
 article #article-info #article-description {
