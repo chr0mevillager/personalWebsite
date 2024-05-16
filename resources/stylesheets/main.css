@@ -87,7 +87,7 @@ article #article-info #article-description {
 }
 
 article #article-info #article-quick-info {
-	width: 10em;
+	width: 17.5em;
 	font-family: neue-haas-grotesk-display, sans-serif;
 	font-weight: 500;
 	font-style: italic;
@@ -129,6 +129,7 @@ article #article-content a:visited {
 	color: var(--secondary-color);
 }
 article #article-content h2 {
+	scroll-margin-top: 3em;
 	font-family: neue-haas-grotesk-display, sans-serif;
 	font-style: italic;
 	font-size: 2em;
@@ -240,9 +241,55 @@ button.link-dropdown p {
 	margin: 0;
 	transition: color 0.5s ease;
 }
+
+/*
+The problem being solved here is the fact that we need to declare the height in terms of something other than %.
+This solution is far from ideal but will work until something like https://github.com/w3c/csswg-drafts/issues/4559 is implimented by browsers.
+Very long dropdowns (I've decided that here, the limit should be 10 elements) can harm the ux; this limit should never be met in reality.
+
+*/
+ul.link-dropdown-list:has(> *:nth-last-child(1)) {
+	height: 3em;
+	transition: height 0.25s ease, padding 0.25s ease, margin-top 0.25s ease;
+}
+ul.link-dropdown-list:has(> *:nth-last-child(2)) {
+	height: 5.5em;
+	transition: height 0.25s ease, padding 0.25s ease, margin-top 0.25s ease;
+}
+ul.link-dropdown-list:has(> *:nth-last-child(3)) {
+	height: 8em;
+	transition: height 0.25s ease, padding 0.25s ease, margin-top 0.25s ease;
+}
+ul.link-dropdown-list:has(> *:nth-last-child(4)) {
+	height: 10.5em;
+	transition: height 0.25s ease, padding 0.25s ease, margin-top 0.25s ease;
+}
+ul.link-dropdown-list:has(> *:nth-last-child(5)) {
+	height: 13em;
+	transition: height 0.25s ease, padding 0.25s ease, margin-top 0.25s ease;
+}
+ul.link-dropdown-list:has(> *:nth-last-child(6)) {
+	height: 15.5em;
+	transition: height 0.25s ease, padding 0.25s ease, margin-top 0.25s ease;
+}
+ul.link-dropdown-list:has(> *:nth-last-child(7)) {
+	height: 18em;
+	transition: height 0.25s ease, padding 0.25s ease, margin-top 0.25s ease;
+}
+ul.link-dropdown-list:has(> *:nth-last-child(8)) {
+	height: 20.5em;
+	transition: height 0.25s ease, padding 0.25s ease, margin-top 0.25s ease;
+}
+ul.link-dropdown-list:has(> *:nth-last-child(9)) {
+	height: 23em;
+	transition: height 0.25s ease, padding 0.25s ease, margin-top 0.25s ease;
+}
+ul.link-dropdown-list:has(> *:nth-last-child(10)) {
+	height: 25.5em;
+	transition: height 0.25s ease, padding 0.25s ease, margin-top 0.25s ease;
+}
 ul.link-dropdown-list {
 	transition: height 0.25s ease, padding 0.25s ease, margin-top 0.25s ease;
-	height: 8em;
 
 	font-family: neue-haas-grotesk-display, sans-serif;
 	font-weight: 600;
@@ -256,7 +303,7 @@ ul.link-dropdown-list {
 	
 	background-color: black;
 	padding: 0;
-	padding-top: 0em;
+	padding-top: 0.5em;
 	padding-bottom: 0em;
 	width: 8em;
 	margin-top: -3em;
@@ -297,7 +344,7 @@ ul.link-dropdown-list.hide {
 	height: 0;
 	padding-top: 0em;
 	padding-bottom: 0em;
-	margin-top: -6em;
+	margin-top: -3em;
 }
 
 ul.link-dropdown-list.hide li {
@@ -333,6 +380,7 @@ header {
 	justify-content: space-between;
 	flex-direction: row;
 	align-items: center;
+	z-index: 5;
 }
 header a #initials {
 	margin-left: 2em;
