@@ -40,11 +40,20 @@ for (var j = 0; j < headerList.length; j++) {
 	}
 }
 
-async function shareArticle() {
+async function shareArticle(el) {
 	try {
 		await navigator.share({
 			title: "" + document.getElementsByTagName("h1")[0].textContent,
   			url: window.location.href,
 		});
-	} catch (error) {}
+	} catch (error) {
+		await navigator.clipboard.writeText(window.location.href);
+
+		//This looks like a transition because the hover effect is mid-animation when the text changes
+		//Removing the hover attribute both triggers the animation and provides immidiate feedback for the button being pressed
+		setTimeout(() => {
+			el.lastChild.textContent = "url copied";
+		}, 125);
+		el.classList.remove("hovered");
+	}
 }
