@@ -86,6 +86,10 @@ article #article-actions {
 	align-items: start;
 }
 
+#table-of-contents-wrapper button, #table-of-contents-wrapper ul {
+	width: 23.33em;
+}
+
 article #article-info #article-description {
 	font-family: neue-haas-grotesk-display, sans-serif;
 	font-weight: 500;
@@ -474,6 +478,30 @@ footer.invert {
 	}
 	header #right-components-landscape {
 		display: none;
+	}
+
+	article h1 {
+		max-width: 80vw;
+		font-size: 3em;
+	}
+	article #article-info {
+		width: 80vw;
+	}
+	article #article-actions {
+		width: 80vw;
+		padding-bottom: 0;
+	}
+	#article-actions #share-button {
+		display: none;
+	}
+	#table-of-contents-wrapper button, #table-of-contents-wrapper ul {
+		width: 80vw;
+	}
+	article #article-info #article-description, article #article-info #article-quick-info, article #article-content {
+		font-size: 1.25em;
+	}
+	article #article-content {
+		width: 80vw;
 	}
 
 	button.link {
