@@ -21,6 +21,8 @@ if (article.offsetHeight > 2 * window.innerHeight) {
 	backToTopElement.setAttribute("href", "#top");
 
 	article.appendChild(backToTopElement);
+} else {
+	document.getElementById("article-actions").style.display = "none"; //if the article isn't long enough we hide the table of contents and share button
 }
 
 // ---------- Add dropdown link to each header ----------
