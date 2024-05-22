@@ -1,0 +1,12 @@
+p {
+	width: 24em;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media screen and (orientation: portrait) {
+	p {
+		width: 80vw;
+	}
+}

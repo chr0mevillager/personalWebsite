@@ -41,6 +41,14 @@ footer {
 	padding: 0;
 }
 
+p.paragraph-text {
+	font-size: 1.5em;
+	color: black;
+	font-family: neue-haas-grotesk-display, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
 /* ---------- Article ---------- */
 article {
 	width: 100%;
@@ -302,6 +310,7 @@ ul.link-dropdown-list:has(> *:nth-last-child(10)) {
 	transition: height 0.25s ease, padding 0.25s ease, margin-top 0.25s ease;
 }
 ul.link-dropdown-list {
+	text-decoration: underline;
 	transition: height 0.25s ease, padding 0.25s ease, margin-top 0.25s ease;
 
 	font-family: neue-haas-grotesk-display, sans-serif;
@@ -347,6 +356,10 @@ ul.link-dropdown-list li {
 
 	background-position-x: 100%;
 	transition: background-position-x 0.25s ease, padding-top 0.25s ease, padding-bottom 0.25s ease, visibility 0.25s, opacity 0.25s ease;
+}
+
+ul.link-dropdown-list a li {
+	text-decoration: none;
 }
 
 ul.link-dropdown-list li:hover {
@@ -432,6 +445,10 @@ header #right-components-landscape ul.link-dropdown-list.hide, header #right-com
 }
 
 /* ---------- Inverted Colors ---------- */
+p.paragraph-text.invert {
+	color: white;
+}
+
 button.link.invert {
 	background-color: white;
 	color: black;
@@ -523,6 +540,7 @@ footer.invert {
 	button.link-dropdown {
 		width: 8em;
 		font-size: 2em;
+		
 		border-left-width: 1em;
 	}
 
@@ -561,6 +579,14 @@ footer.invert {
 @media (prefers-color-scheme: dark) {
 	body {
 		background-color: black;
+	}
+
+	p.paragraph-text {
+		color: white;
+	}
+
+	p.paragraph-text.invert {
+		color: black;
 	}
 	
 	article {
