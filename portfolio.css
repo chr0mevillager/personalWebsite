@@ -1,12 +1,151 @@
-p {
+#intro {
+	margin-top: 4em;
+	margin-bottom: 8em;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	width: 100%;
+}
+
+#intro p {
 	width: 24em;
+}
+
+#timeline {
+	list-style: none;
 	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 49em;
+	padding: 0;
+	padding-left: 4em;
+
+	border: 0;
+	border-style: outset;
+	border-left-width: 1em;
+	border-color: var(--primary-color);
+}
+
+#timeline li {
+	width: 45em;
+	background-color: black;
+	margin-bottom: 8em;
+	padding: 5%;
+	color: white;
+}
+
+h1 {
+	font-family: neue-haas-grotesk-display, sans-serif;
+	font-style: italic;
+	font-size: 6em;
+	font-weight: 900;
+	max-width: 9em;
+	padding: 0;
+	width: fit-content;
+	text-align: justify;
+	margin: 0;
+}
+
+h2 {
+	scroll-margin-top: 2em;
+	font-family: neue-haas-grotesk-display, sans-serif;
+	font-style: italic;
+	font-size: 4em;
+	font-weight: 900;
+	padding: 0;
+	margin: .75em;
+	margin-left: 0;
+	text-align: left;
+	display: block;
+	width: 11.25em;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+.title {
+	font-family: neue-haas-grotesk-display, sans-serif;
+	font-style: italic;
+	font-size: 2em;
+	font-weight: 900;
+	max-width: 90%;
+	padding: 0;
+	width: fit-content;
+	text-align: justify;
+	margin: 0;
+}
+
+.description {
+	font-family: neue-haas-grotesk-display, sans-serif;
+	font-weight: 500;
+	font-size: 1.5em;
+	width: 90%;
+}
+
+.navigation-buttons {
+	width: 110%;
+}
+
+#ending {
+	margin-top: 4em;
+	width: 100%;
+	display: flex;
+	padding-bottom: 33vh;
+	align-items: center;
+	justify-content: center;
+}
+#ending-text {
+	margin-right: 8em;
+	margin-left: 1em;
+}
+
 @media screen and (orientation: portrait) {
-	p {
+	#intro {
 		width: 80vw;
+		margin-left: 10vw;
+		margin-top: 6em;
+	}
+	#timeline {
+		width: 80vw;
+		border: none;
+		padding: 0;
+	}
+	#timeline li {
+		margin: 5vw;
+		width: 60vw;
+		padding: 5vw;
+	}
+	.navigation-buttons {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		margin-left: -1.5em;
+	}
+	#ending {
+		flex-direction: column;
+	}
+	#ending-text {
+		margin: 0;
+		margin-bottom: 1em;
+	}
+	h1 {
+		max-width: 80vw;
+		font-size: 3em;
+	}
+	h2 {
+		font-size: 2em;
+		width: 70vw;
+		padding-top: 4em;
+	}
+
+}
+
+@media (prefers-color-scheme: dark) {
+	h1, h2 {
+		color: white;
+	}
+	#timeline li {
+		background-color: white;
+		color: black;
 	}
 }
