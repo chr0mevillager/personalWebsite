@@ -12,7 +12,7 @@
 	width: 24em;
 }
 
-#timeline {
+.timeline {
 	list-style: none;
 	display: block;
 	margin-left: auto;
@@ -27,7 +27,7 @@
 	border-color: var(--primary-color);
 }
 
-#timeline li {
+.timeline li {
 	width: 45em;
 	background-color: black;
 	margin-bottom: 8em;
@@ -144,7 +144,7 @@ h2 {
 	h1, h2 {
 		color: white;
 	}
-	#timeline li {
+	.timeline li {
 		background-color: white;
 		color: black;
 	}
