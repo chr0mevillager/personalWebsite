@@ -425,14 +425,15 @@ header #right-components-landscape {
 
 header #right-components-portrait {
 	display: none;
+	margin-right: -1em;
 }
 
 header #right-components-portrait button {
-	width: 3.25em;
+	width: 2.5em;
 }
 
 header #right-components-portrait button p {
-	font-size: 0.75em;
+	font-size: 0.5em;
 }
 
 header #right-components-landscape ul.link-dropdown-list, header #right-components-portrait ul.link-dropdown-list {
@@ -490,7 +491,7 @@ footer.invert {
 		height: 5em;
 	}
 	header a #initials {
-		margin-left: 2.5em;
+		margin-left: 1.125em;
 		height: 2.5em;
 	}
 	header #right-components-portrait {
