@@ -6,15 +6,6 @@
 	overflow: hidden;
 }
 
-#form-overlay {
-	background-color: white;
-	height: 71px;
-	width: 54em;
-	margin-top: -71px;
-	position: relative;
-
-}
-
 article {
 	padding-bottom: 10em;
 }
@@ -26,11 +17,5 @@ article {
 	}
 	article {
 		padding-bottom: 0em;
-	}
-}
-
-@media (prefers-color-scheme: dark) {
-	#form-overlay {
-		background-color: black;
 	}
 }
