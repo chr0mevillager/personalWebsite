@@ -143,12 +143,14 @@ h2 {
 		font-size: 3em;
 	}
 	h2 {
-		font-size: 4em;
+		font-size: 3em;
 		width: 70vw;
 		padding-top: 1em;
 		margin-left: 10vw;
 	}
-
+	.description {
+		font-size: 1em;
+	}
 }
 
 @media (prefers-color-scheme: dark) {

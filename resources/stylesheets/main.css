@@ -42,7 +42,7 @@ footer {
 }
 
 p.paragraph-text {
-	font-size: 1.5em;
+	font-size: 1em;
 	color: black;
 	font-family: neue-haas-grotesk-display, sans-serif;
 	font-weight: 500;
@@ -514,7 +514,7 @@ footer.invert {
 		width: 80vw;
 	}
 	article #article-info #article-description, article #article-info #article-quick-info, article #article-content {
-		font-size: 1.25em;
+		font-size: 1em;
 	}
 	article #article-content {
 		width: 80vw;
