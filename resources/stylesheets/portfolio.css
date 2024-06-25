@@ -105,12 +105,15 @@ h2 {
 		margin-left: 10vw;
 		margin-top: 6em;
 	}
-	#timeline {
+	#intro p {
+		width: 80vw;
+	}
+	.timeline {
 		width: 80vw;
 		border: none;
 		padding: 0;
 	}
-	#timeline li {
+	.timeline li {
 		margin: 5vw;
 		width: 60vw;
 		padding: 5vw;
