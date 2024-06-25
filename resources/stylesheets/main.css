@@ -425,15 +425,10 @@ header #right-components-landscape {
 
 header #right-components-portrait {
 	display: none;
-	margin-right: -1em;
 }
 
 header #right-components-portrait button {
-	width: 2.5em;
-}
-
-header #right-components-portrait button p {
-	font-size: 0.5em;
+	width: 4em;
 }
 
 header #right-components-landscape ul.link-dropdown-list, header #right-components-portrait ul.link-dropdown-list {
@@ -526,8 +521,8 @@ footer.invert {
 	}
 
 	button.link {
-		width: 8em;
-		font-size: 2em;
+		width: 60vw;
+		font-size: 1em;
 		border-left-width: 1em;
 	}
 
@@ -539,12 +534,12 @@ footer.invert {
 
 	ul.link-dropdown-list {
 		width: 8em;
-		font-size: 2em;
+		font-size: 1em;
 	}
 
 	button.link-dropdown {
-		width: 8em;
-		font-size: 2em;
+		width: 60vw;
+		font-size: 1em;
 		
 		border-left-width: 1em;
 	}
@@ -566,7 +561,7 @@ footer.invert {
 		position: absolute;
 		width: 100%;
 		height: 13.33em;
-		top: 2.5em;
+		top: 5em;
 		left: 0;
 		margin: 0;
 		transition: height 0.25s ease, padding 0.25s ease;

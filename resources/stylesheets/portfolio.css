@@ -98,12 +98,18 @@ h2 {
 	margin-right: 8em;
 	margin-left: 1em;
 }
+#intro button, #intro ul {
+	width: 12em;
+}
 
 @media screen and (orientation: portrait) {
 	#intro {
 		width: 80vw;
 		margin-left: 10vw;
 		margin-top: 6em;
+	}
+	#intro button, #intro ul {
+		width: 80vw;
 	}
 	#intro p {
 		width: 80vw;
@@ -115,7 +121,8 @@ h2 {
 	}
 	.timeline li {
 		margin: 5vw;
-		width: 60vw;
+		margin-left: 1.125vw;
+		width: 70vw;
 		padding: 5vw;
 	}
 	.navigation-buttons {
@@ -136,9 +143,10 @@ h2 {
 		font-size: 3em;
 	}
 	h2 {
-		font-size: 2em;
+		font-size: 4em;
 		width: 70vw;
-		padding-top: 4em;
+		padding-top: 1em;
+		margin-left: 10vw;
 	}
 
 }
