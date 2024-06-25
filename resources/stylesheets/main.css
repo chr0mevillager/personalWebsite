@@ -428,7 +428,11 @@ header #right-components-portrait {
 }
 
 header #right-components-portrait button {
-	width: 4em;
+	width: 3.25em;
+}
+
+header #right-components-portrait button p {
+	font-size: 0.75em;
 }
 
 header #right-components-landscape ul.link-dropdown-list, header #right-components-portrait ul.link-dropdown-list {
@@ -483,7 +487,7 @@ footer.invert {
 
 @media screen and (orientation: portrait) {
 	header {
-		height: 10em;
+		height: 5em;
 	}
 	header a #initials {
 		margin-left: 2.5em;
@@ -561,7 +565,7 @@ footer.invert {
 		position: absolute;
 		width: 100%;
 		height: 13.33em;
-		top: 5em;
+		top: 2.5em;
 		left: 0;
 		margin: 0;
 		transition: height 0.25s ease, padding 0.25s ease;
