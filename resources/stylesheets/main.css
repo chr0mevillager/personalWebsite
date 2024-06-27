@@ -1,7 +1,7 @@
 /* Fonts */
 @font-face {
     font-family: "overused-grotesk";
-    src: url("OverusedGrotesk.woff") format("woff");
+    src: url("overused_grotesk.woff") format("woff");
 }
 /* Colors */
 :root {
