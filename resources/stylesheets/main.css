@@ -48,98 +48,22 @@ p.paragraph-text {
 	font-weight: 500;
 	font-style: normal;
 }
-/* ---------- Cards ---------- */
-.cards {
-	list-style: none;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 49em;
-	padding: 0;
-	padding-left: 4em;
 
-	border: 0;
-	border-style: outset;
-	border-left-width: 1em;
-	border-color: var(--primary-color);
-}
-.cards li {
-	width: 45em;
-	background-color: black;
-	margin-bottom: 8em;
-	padding: 5%;
-	color: white;
-}
-.cards li .title {
-	font-family: overused-grotesk, sans-serif;
-	letter-spacing: -0.03em;
-	font-style: italic;
-	font-size: 2em;
-	font-weight: 900;
-	max-width: 90%;
-	padding: 0;
-	width: fit-content;
-	text-align: justify;
-	margin: 0;
-}
-
-.cards li .description {
-	font-family: overused-grotesk, sans-serif;
-	letter-spacing: -0.03em;
-	font-weight: 500;
-	font-size: 1.5em;
-	width: 90%;
-}
-
-.cards li .navigation-buttons {
-	width: 110%;
-}
-
-/* ---------- Inverted Colors ---------- */
-
+/* Inverted Colors */
 p.paragraph-text.invert {
 	color: white;
 }
-
 footer.invert {
 	color: white;
 }
 
-/* ---------- Special Modes ---------- */
-
 @media screen and (orientation: portrait) {
-	.cards {
-		width: 80vw;
-		border: none;
-		padding: 0;
-	}
-	.cards li {
-		margin: 5vw;
-		margin-left: 1.125vw;
-		width: 70vw;
-		padding: 5vw;
-	}
-	.cards li .navigation-buttons {
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-		margin-left: -1.5em;
-	}
-	.cards li .description {
-		font-size: 1em;
-	}
-
 	footer {
 		display: none;
 	}
 }
 
 @media (prefers-color-scheme: dark) {
-	.cards li {
-		background-color: white;
-		color: black;
-	}
-	
 	body {
 		background-color: black;
 	}
