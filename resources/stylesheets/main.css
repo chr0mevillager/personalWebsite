@@ -1,5 +1,8 @@
-@import url("https://use.typekit.net/kac4pst.css");
-
+/* Fonts */
+@font-face {
+    font-family: "overused-grotesk";
+    src: url("OverusedGrotesk.woff") format("woff");
+}
 /* Colors */
 :root {
 	--primary-color: #1a92ff;
@@ -27,8 +30,9 @@ body {
 footer {
 	opacity: 75%;
 	color: black;
-	font-family: neue-haas-grotesk-display, sans-serif;
-	font-weight: 200;
+	font-family: overused-grotesk, sans-serif;
+	letter-spacing: -0.03em;
+	font-weight: 300;
 	font-style: normal;
 	font-size: .75em;
 	text-align: center;
@@ -44,7 +48,8 @@ footer {
 p.paragraph-text {
 	font-size: 1em;
 	color: black;
-	font-family: neue-haas-grotesk-display, sans-serif;
+	font-family: overused-grotesk, sans-serif;
+	letter-spacing: -0.03em;
 	font-weight: 500;
 	font-style: normal;
 }
@@ -63,7 +68,8 @@ article {
 }
 
 article h1 {
-	font-family: neue-haas-grotesk-display, sans-serif;
+	font-family: overused-grotesk, sans-serif;
+	letter-spacing: -0.03em;
 	font-style: italic;
 	font-size: 6em;
 	font-weight: 900;
@@ -99,7 +105,8 @@ article #article-actions {
 }
 
 article #article-info #article-description {
-	font-family: neue-haas-grotesk-display, sans-serif;
+	font-family: overused-grotesk, sans-serif;
+	letter-spacing: -0.03em;
 	font-weight: 500;
 	font-style: italic;
 	max-width: 17.5em;
@@ -110,7 +117,8 @@ article #article-info #article-description {
 
 article #article-info #article-quick-info {
 	width: 17.5em;
-	font-family: neue-haas-grotesk-display, sans-serif;
+	font-family: overused-grotesk, sans-serif;
+	letter-spacing: -0.03em;
 	font-weight: 500;
 	font-style: italic;
 	font-size: 1.5em;
@@ -126,7 +134,8 @@ article #article-info #article-quick-info p, article #article-info #article-quic
 }
 
 article #article-content {
-	font-family: neue-haas-grotesk-display, sans-serif;
+	font-family: overused-grotesk, sans-serif;
+	letter-spacing: -0.03em;
 	font-weight: 500;
 	font-size: 1.5em;
 	width: 24em;
@@ -151,7 +160,8 @@ article #article-content a:visited {
 }
 article #article-content h2 {
 	scroll-margin-top: 3em;
-	font-family: neue-haas-grotesk-display, sans-serif;
+	font-family: overused-grotesk, sans-serif;
+	letter-spacing: -0.03em;
 	font-style: italic;
 	font-size: 2em;
 	font-weight: 900;
@@ -161,7 +171,8 @@ article #article-content h2 {
 	margin-left: 0;
 }
 article #article-content h3 {
-	font-family: neue-haas-grotesk-display, sans-serif;
+	font-family: overused-grotesk, sans-serif;
+	letter-spacing: -0.03em;
 	font-style: italic;
 	font-size: 1.5em;
 	font-weight: 900;
@@ -177,7 +188,8 @@ button.link {
 	background-color: black;
 
 	color: white;
-	font-family: neue-haas-grotesk-display, sans-serif;
+	font-family: overused-grotesk, sans-serif;
+	letter-spacing: -0.03em;
 	font-weight: 600;
 	font-style: normal;
 	font-size: 1.5em;
@@ -223,7 +235,8 @@ button.link-dropdown {
 	background-color: black;
 
 	color: white;
-	font-family: neue-haas-grotesk-display, sans-serif;
+	font-family: overused-grotesk, sans-serif;
+	letter-spacing: -0.03em;
 	font-weight: 600;
 	font-style: normal;
 	font-size: 1.5em;
@@ -313,7 +326,8 @@ ul.link-dropdown-list {
 	text-decoration: underline;
 	transition: height 0.25s ease, padding 0.25s ease, margin-top 0.25s ease;
 
-	font-family: neue-haas-grotesk-display, sans-serif;
+	font-family: overused-grotesk, sans-serif;
+	letter-spacing: -0.03em;
 	font-weight: 600;
 	font-style: normal;
 	font-size: 1.5em;
