@@ -1,0 +1,87 @@
+#top {
+	height: 6em;
+	padding: 0;
+}
+
+header {
+	width: 100%;
+	padding: 0;
+	height: 6em;
+	background-color: black;
+	position: fixed;
+
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+	z-index: 5;
+}
+header a #initials {
+	margin-left: 2em;
+	height: 2em;
+}
+header #right-components-landscape {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+header #right-components-portrait {
+	display: none;
+}
+
+header #right-components-portrait button {
+	width: 4em;
+}
+
+header #right-components-landscape ul.link-dropdown-list, header #right-components-portrait ul.link-dropdown-list {
+	position: absolute;
+	margin: 0;
+	margin-right: 1em;
+	margin-top: 12em;
+
+	transition: height 0.25s ease, margin-top 0.25s ease;
+}
+
+header #right-components-landscape ul.link-dropdown-list.hide, header #right-components-portrait ul.link-dropdown-list.hide {
+	margin-top: 4em;
+}
+
+@media screen and (orientation: portrait) {
+	header {
+		height: 5em;
+	}
+	header a #initials {
+		margin-left: 1.125em;
+		height: 2.5em;
+	}
+	header #right-components-portrait {
+		display: block;
+	}
+	header #right-components-landscape {
+		display: none;
+	}
+	header #right-components-portrait ul.link-dropdown-list {
+		position: absolute;
+		width: 100%;
+		height: 13.33em;
+		top: 5em;
+		left: 0;
+		margin: 0;
+		transition: height 0.25s ease, padding 0.25s ease;
+	}
+
+	header #right-components-portrait ul.link-dropdown-list li {
+		padding-left: 3em;
+	}
+	header #right-components-portrait ul.link-dropdown-list.hide {
+		height: 0em;
+		margin: 0;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	header {
+		background-color: white;
+	}
+}
