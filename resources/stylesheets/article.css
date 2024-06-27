@@ -125,6 +125,11 @@ article #article-content h3 {
 	margin-left: 0;
 }
 
+#table-of-contents-wrapper ul {
+	margin-left: 1em;
+	margin-top: -1em;
+}
+
 @media screen and (orientation: portrait) {
 	article h1 {
 		max-width: 80vw;
