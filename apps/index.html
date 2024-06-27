@@ -7,12 +7,12 @@
 	<meta name="robots" content="index,follow">
 	<meta name="googlebot" content="index,follow">
 
-	<title>Contact</title>
-	<meta name="description" content=“Please send me a message through my form here!”/>
+	<title>Apps</title>
+	<meta name="description" content="A collection of simple webapps."/>
 	<meta name="author" content="Chase Wagler"/>
 
-	<link rel="stylesheet" href="resources/stylesheets/main.css">
-	<link rel="stylesheet" href="resources/stylesheets/contact.css">
+	<link rel="stylesheet" href="../resources/stylesheets/main.css">
+	<link rel="stylesheet" href="resources/stylesheets/index.css">
 
 	<link rel="icon" type="image/x-icon" href="resources/images/favicon.svg">
 	<link rel="shortcut icon" type="image/x-icon" href="resources/images/favicon.svg">
@@ -20,7 +20,7 @@
 
 <body>
 	<header>
-		<a href="index.html">
+		<a href="../index.html">
 			<svg id="initials" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.49 7.36">
 				<defs>
 					<style>
@@ -52,34 +52,47 @@
 				</svg>
 		</a>
 		<div id="right-components-landscape">
-			<a href="about.html"><button class="link invert">about</button></a>
-			<a href="contact.html"><button class="link invert">contact</button></a>
+			<a href="../about.html"><button class="link invert">about</button></a>
+			<a href="../contact.html"><button class="link invert">contact</button></a>
 			<button class="link-dropdown invert" onclick="showDropdown(this)">more ☰</button>
 				<ul class="link-dropdown-list hide">
-					<li><a href=comingSoon.html>design</a></li>
-					<li><a href=portfolio.html>portfolio</a></li>
+					<li><a href=../comingSoon.html>design</a></li>
+					<li><a href=../portfolio.html>portfolio</a></li>
 					<li><a href=apps/index.html>apps</a></li>
 				</ul>
 		</div>
 		<div id="right-components-portrait">
 			<button class="link-dropdown invert" onclick="showDropdown(this)">☰</button>
 				<ul class="link-dropdown-list hide">
-					<li><a href=about.html>about</a></li>
-					<li><a href=contact.html>contact</a></li>
-					<li><a href=comingSoon.html>design</a></li>
-					<li><a href=portfolio.html>portfolio</a></li>
+					<li><a href=../about.html></a>about</a></li>
+					<li><a href=../contact.html>contact</a></li>
+					<li><a href=../comingSoon.html>design</a></li>
+					<li><a href=../portfolio.html>portfolio</a></li>
 					<li><a href=apps/index.html>apps</a></li>
 				</ul>
 		</div>
 	</header>
 	<div id="top"></div>
-	<article>
-		<h1>contact</h1>
-		<iframe id="contact-form" src="https://form.jotform.com/241755800212044"></iframe>
-	</article>
+	<div id="intro">
+		<h1>webapps</h1>
+		<p class="paragraph-text">These webapps are free to use; visit a specific app to get started!</p>
+	</div>
+	<ol class="cards">
+		<li>
+			<h3 class="title">unix clock</h3>
+			<p class="description">Create, read, and test timestamps for use in Discord.</p>
+			<div class="navigation-buttons">
+				<a href="unixClock.html" target="_blank"><button class="link invert">launch</button></a>
+			</div>
+		</li>
+	</ol>
+	<div id="ending">
+		<a href="#top"><button class="link">back to top</button></a>
+	</div>
+	
 	<footer>2024 | cwagler.com</footer>
 </body>
 
-<script src="resources/scripts/buttonBuilder.js"></script>
+<script src="../resources/scripts/buttonBuilder.js"></script>
 
 </html>
