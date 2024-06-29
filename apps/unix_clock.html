@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index,follow">
+	<meta name="googlebot" content="index,follow">
+
+	<title>Unix Clock</title>
+	<meta name="description" content="Create, read, and test timestamps for use in Discord."/>
+	<meta name="author" content="Chase Wagler"/>
+
+	<link rel="stylesheet" href="../resources/stylesheets/buttons.css">
+	<link rel="stylesheet" href="../resources/stylesheets/main.css">
+	<link rel="stylesheet" href="resources/stylesheets/main.css">
+
+	<link rel="icon" type="image/x-icon" href="resources/images/favicon.svg">
+	<link rel="shortcut icon" type="image/x-icon" href="resources/images/favicon.svg">
+</head>
+
+<body>
+	<header>
+		<h1 class="title">unix clock</h1>
+		<a href="index.html" target="_blank"><button class="link invert">home</button></a>
+	</header>
+	<div id="main-body">
+		<ul class="sidebar">
+			<li>
+				<button class="link">make timestamp</button>
+			</li>
+			<li>
+				<button class="link">shift timestamp</button>
+			</li>
+			<li>
+				<button class="link">get discord formatting</button>
+			</li>
+			<li>
+				<p class="paragraph-text invert">Create, read, and test timestamps for use in Discord.<br><br>Use the <em>Make Timestamp</em> tool to create a timestamp from a date, use the <em>Shift Timestamp</em> tool to take a timestamp and shift it by a certian duration, or use the <em>Get Discord Formmating</em> to get a specific time format for use in Discord.</p>
+			</li>
+		</ul>
+		<div class="content" id="make-timestamp">
+			<div class="input">
+				<h2>date & time selection</h2>
+				<p class="paragraph-text">Select a date and time for the timestamp to represent.</p>
+				<input type="datetime-local" id="datetime-input" step="1"/>
+				<button class="link" onclick="setDateTimeToCurrentDate()">set to current time</button>
+				<button class="link" onclick="pasteISODate()">paste ISO date</button>
+			</div>
+			<div class="output">
+				test
+			</div>
+		</div>
+	</div>
+</body>
+
+<script src="../resources/scripts/buttonBuilder.js"></script>
+<script>
+	function setDateTimeToCurrentDate() {
+		var currentTime = new Date();
+		currentTime.setMinutes(currentTime.getMinutes() - currentTime.getTimezoneOffset());
+		document.getElementById("datetime-input").value = currentTime.toISOString().slice(0,16);
+	}
+	function pasteISODate() {
+		navigator.clipboard.readText()
+		.then(text => {
+			document.getElementById("datetime-input").value = new Date(text).toISOString().slice(0,16);
+		})
+		.catch(err => {
+			console.error('Failed to read clipboard contents: ', err);
+		});
+	}
+</script>
+
+</html>
