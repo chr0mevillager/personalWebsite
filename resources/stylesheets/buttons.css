@@ -26,6 +26,12 @@ button.link {
 	z-index: 2;
 
 }
+button.link.success {
+	border-color: var(--success-color);
+}
+button.link.failure {
+	border-color: var(--failure-color);
+}
 
 button.link .wiper {
 	transition: width 0.5s ease;
@@ -34,6 +40,12 @@ button.link .wiper {
 	background-color: var(--primary-color);
 	position: absolute;
 	z-index: 3;
+}
+button.link.success .wiper {
+	background-color: var(--success-color);
+}
+button.link.failure .wiper {
+	background-color: var(--failure-color);
 }
 
 button.link p {
@@ -338,4 +350,12 @@ ul.link-dropdown-list li.invert {
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
+}
+
+/* Custom rules for text on success and failure colors */
+button.open-link-dropdown.success p,
+button.hovered.success p,
+button.open-link-dropdown.failure p,
+button.hovered.failure p {
+	color: black;
 }

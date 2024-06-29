@@ -8,6 +8,8 @@
 	--primary-color: #1a92ff;
 	--secondary-color: #9363ff;
 	--tertiary-color: #00c4c1;
+	--success-color: #96ff4a;
+	--failure-color: #ff4a47;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,6 +17,8 @@
 		--primary-color: #1a92ff;
 		--secondary-color: #7f1dff;
 		--tertiary-color: #00a6a3;
+		--success-color: #96ff4a;
+		--failure-color: #ff4a47;
 	}
 }
 
