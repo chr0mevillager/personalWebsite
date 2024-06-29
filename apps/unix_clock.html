@@ -22,33 +22,36 @@
 <body>
 	<header>
 		<h1 class="title">unix clock</h1>
-		<a href="index.html" target="_blank"><button class="link invert">home</button></a>
+		<a href="index.html" target="_blank"><button id="home" class="link invert">home</button></a>
 	</header>
 	<div id="main-body">
-		<ul class="sidebar">
-			<li>
-				<button class="link">make timestamp</button>
-			</li>
-			<li>
-				<button class="link">shift timestamp</button>
-			</li>
-			<li>
-				<button class="link">get discord formatting</button>
-			</li>
-			<li>
-				<p class="paragraph-text invert">Create, read, and test timestamps for use in Discord.<br><br>Use the <em>Make Timestamp</em> tool to create a timestamp from a date, use the <em>Shift Timestamp</em> tool to take a timestamp and shift it by a certian duration, or use the <em>Get Discord Formmating</em> to get a specific time format for use in Discord.</p>
-			</li>
-		</ul>
-		<div class="content" id="make-timestamp">
-			<div class="input">
-				<h2>date & time selection</h2>
-				<p class="paragraph-text">Select a date and time for the timestamp to represent.</p>
-				<input type="datetime-local" id="datetime-input" step="1"/>
+		<div class="input">
+			<h2>date & time selection</h2>
+			<p class="paragraph-text">Select a date and time for the timestamp to represent.</p>
+			<input type="datetime-local" id="datetime-input" step="1"/>
+			<div class="manipulation-buttons">
 				<button class="link" onclick="setDateTimeToCurrentDate()">set to current time</button>
-				<button class="link" onclick="pasteISODate()">paste ISO date</button>
+				<button class="link" onclick="pasteISODate()">paste ISO date & time</button>
 			</div>
-			<div class="output">
-				test
+			<button class="link success" id="generateTimestamp" onclick="updateTimestamp()">generate timestamp</button>
+		</div>
+		<div id="arrow">⮕</div>
+		<div class="output">
+			<h2>generated timestamp</h2>
+			<p id="timestamp">---</p>
+			<button id="share-button" class="link success" onclick="copyTimestamp(this)">copy timestamp</button>
+			<h3>discord visualizations</h3>
+			<div id="discord-info">
+				<p class="paragraph-text">Discord can display timestamps in seven different ways, all using &ltt:000:<em>x</em>&gt format, where your timestamp goes in the place of 000 and <em>x</em> is replaced by one of the following letters:<br></p>
+				<ul>
+					<li>t &nbsp; HH:MM AM/PM</li>
+					<li>T &nbsp; HH:MM:SS AM/PM</li>
+					<li>R &nbsp; Relative (ex. in 5 hours)</li>
+					<li>d &nbsp; M/DD/YYYY</li>
+					<li>D &nbsp; MMMM DD, YYYY</li>
+					<li>f &nbsp; MMMM DD, YYYY HH:MM AM/PM</li>
+					<li>F &nbsp; EEEE, MMMM DD, YYYY HH:MM AM/PM</li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -69,6 +72,22 @@
 		.catch(err => {
 			console.error('Failed to read clipboard contents: ', err);
 		});
+	}
+
+	function updateTimestamp() {
+		document.getElementById("timestamp").textContent = new Date(document.getElementById("datetime-input").value).getTime() / 1000;
+	}
+
+	async function copyTimestamp(el) {
+		await navigator.clipboard.writeText(document.getElementById("timestamp").textContent);
+		setTimeout(() => {
+			el.lastChild.textContent = "timestamp copied";
+		}, 125);
+		el.classList.remove("hovered");
+		//We revert back the text (unlike the share button in articles) because users may need to copy multiple times.
+		setTimeout(() => {
+			el.lastChild.textContent = "copy timestamp";
+		}, 5000);
 	}
 </script>
 
