@@ -1,0 +1,17 @@
+#bookmark-list {
+	width: 90dvw;
+	height: calc(100dvh - 10dvw);
+	padding: 5dvw;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+a {
+	margin: 2.5dvw;
+}
+
+img {
+	width: 10dvw;
+	border-radius: 2dvw;
+}
