@@ -1,0 +1,57 @@
+#main-body {
+	display: flex;
+	flex-direction: row;
+	width: 90dvw;
+	height: calc(90dvh - 6em);
+	margin: 0;
+	padding: 5dvw;
+	padding-bottom: 0;
+	justify-content: space-around;
+	align-items: center;
+	overflow: hidden;
+}
+
+input::-webkit-inner-spin-button {
+	display: none;
+}
+
+input {
+	color: black;
+	background-color: #00000000;
+	border: none;
+	font-size: 1.5em;
+	font-family: overused-grotesk, sans-serif;
+	letter-spacing: -0.03em;
+	font-weight: 900;
+	text-align: center;
+}
+
+input:focus {
+	border: none;
+}
+
+.incriment-button {
+	background-color: black;
+	color: white;
+	font-size: 1.5em;
+	font-family: overused-grotesk, sans-serif;
+	font-weight: 900;
+	width: 2em;
+	height: 2em;
+	cursor: pointer;
+	border: none;
+}
+
+.incriment-button:active {
+	color: #00000000;
+}
+
+@media (prefers-color-scheme: dark) {
+	input {
+		color: white;
+	}
+	.incriment-button {
+		background-color: white;
+		color: black;
+	}
+}
