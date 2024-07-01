@@ -55,3 +55,14 @@ input:focus {
 		color: black;
 	}
 }
+
+@media screen and (orientation: portrait) {
+	#main-body {
+		padding: 10dvw;
+		width: 80dvw;
+	}
+	input {
+		width: 40dvw;
+		margin: 5dvw;
+	}
+}
